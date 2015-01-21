@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+{% load staticfiles %}
+
+<head>
+  <title>Rango</title>
+</head>
+
+<body>
+  <center>
+    <h1>Rango says...</h1>
+  </br>
+    Here is the about page that has made
+  </br>
+    <b>by</b>
+  </br>
+    {{ name }}
+  </br>
+    {{student_num}}
+  </br/>
+    <a href="/rango/">index</a>
+  </br>
+    my normal profile pic
+    <img src="{% static "images/Dillnot.jpg" %}" alt="profile pic" />
+    and a pic of me
+    <img src="{% static "images/me.jpg" %}" alt="pic of dylan stevenson" />
+  </center>
+</body>
+
+</html>
