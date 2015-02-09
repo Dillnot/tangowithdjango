@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
 
 {% load staticfiles %}
 
-<head>
-  <title>Rango</title>
-</head>
+{% block title %}Rango{% endblock %}
 
-<body>
+{% block body_block %}
   <center>
     <h1>Rango says...</h1>
   </br>
@@ -18,14 +15,11 @@
     {{ name }}
   </br>
     {{student_num}}
-  </br/>
-    <a href="/rango/">index</a>
   </br>
     my normal profile pic
     <img src="{% static "images/Dillnot.jpg" %}" alt="profile pic" />
+  </br>
     and a pic of me
     <img src="{% static "images/me.jpg" %}" alt="pic of dylan stevenson" />
   </center>
-</body>
-
-</html>
+{% endblock %}
