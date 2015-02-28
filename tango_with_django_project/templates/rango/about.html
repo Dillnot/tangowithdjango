@@ -2,28 +2,38 @@
 
 {% load staticfiles %}
 
-{% block title %}Rango{% endblock %}
+{% block title %}About{% endblock %}
 
 {% block body_block %}
-  <center>
-    <h1>Rango says...</h1>
-  </br>
-    Here is the about page that has made
-  </br>
-    <b>by</b>
-  </br>
-    {{ name }}
-  </br>
-    {{student_num}}
-  </br>
-    my normal profile pic
-    <img src="{% static "images/Dillnot.jpg" %}" alt="profile pic" />
-  </br>
-    and a pic of me
-    <img src="{% static "images/me.jpg" %}" alt="pic of dylan stevenson" />
-  </center>
+    <div class="page-header">
+      <center>
+        <h1>
+          About
+        </h1>
+      </center>
+    </div>
+    <div>
+      <center>
+        Here is the about page that has made
+        </br>
+          <b>by</b>
+        </br>
+          {{ name }}
+        </br>
+          {{student_num}}
+        </br>
+          my normal profile pic
+        </br>
+          <img src="{% static "images/Dillnot.jpg" %}" alt="profile pic" />
+        </br>
+          and a pic of me
+        </br>
+          <img src="{% static "images/me.jpg" %}" alt="pic of dylan stevenson" />
+        </br>
 
-  <p>
-     visits: {{ visits }} <!--show how many times you have visted the site-->
-  </p>
+        <p>
+           visits: {{ visits }} <!--show how many times you have visted the site-->
+        </p>
+      </center>
+    </div>
 {% endblock %}
