@@ -298,3 +298,6 @@ def profile(request):
     context_dic = { 'user' : user, 'userprofile' : profile, 'visits' : count}
 
     return render(request, 'rango/profile.html', context_dic)
+
+def bad(request):
+    return render(request,'rango/bad.html')
