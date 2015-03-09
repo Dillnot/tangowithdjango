@@ -60,7 +60,7 @@ def category(request, category_name_slug):
     context_dict['result_list'] = None
     context_dict['query'] = None
     if request.method == 'POST':
-        query = request.POST['query'].strip()
+        query = request.POST.get('query','').strip()
 
         if query:
             # Run our Bing function to get the results list!
@@ -298,5 +298,3 @@ def profile(request):
     context_dic = { 'user' : user, 'userprofile' : profile, 'visits' : count}
 
     return render(request, 'rango/profile.html', context_dic)
-
-    
