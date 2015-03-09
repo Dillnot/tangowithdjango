@@ -3,6 +3,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tango_with_django_project.setti
 
 import django
 django.setup()
+from django.contrib.auth.models import User
 
 from rango.models import Category, Page
 
